@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0f;
+    color: white;
+}
+
+header {
+    background: #111118;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.logo span,
+.hero-content h2 span {
+    color: #00e5a8;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00e5a8;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #183b35, #0b0b0f 70%);
+}
+
+.tagline {
+    color: #00e5a8;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: clamp(38px, 7vw, 72px);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #00e5a8;
+    color: #080808;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #00e5a8;
+}
+
+.section p {
+    line-height: 1.8;
+}
+
+.services {
+    background: #111118;
+}
+
+.service-card {
+    display: inline-block;
+    width: 260px;
+    max-width: 100%;
+    padding: 30px 20px;
+    margin: 12px;
+    background: #1c1c27;
+    border: 1px solid #33333e;
+    border-radius: 12px;
+    transition: 0.3s;
+    vertical-align: top;
+}
+
+.service-card:hover {
+    border-color: #00e5a8;
+    transform: translateY(-6px);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    color: #00e5a8;
+}
+
+footer {
+    background: #08080c;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+}
